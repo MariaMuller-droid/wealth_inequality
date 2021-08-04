@@ -4,6 +4,7 @@ let mijnTweedeButton = document.querySelector(".oprah .button");
 let mijnOprahKader= document.querySelector("div .oprah");
 let mijnMadonnaKader = document.querySelector(".madonna");
 let mijnDerdeButton = document.querySelector(".madonna .button");
+let mijnZoomIn = document.querySelector(".zoomin");
 
 function eersteStap(){
     mijnEersteStap.classList.add("onzichtbaar")
@@ -22,6 +23,7 @@ function derdeStap(){
     mijnDerdeButton.classList.add("onzichtbaar");
     mijnOprahKader.classList.add("fotoMadonna");
     mijnMadonnaKader.classList.add("onzichtbaar");
+    mijnZoomIn.classList.remove("onzichtbaar");
 }
 
 mijnDerdeButton.addEventListener("click", derdeStap);

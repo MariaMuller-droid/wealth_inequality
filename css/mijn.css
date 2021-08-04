@@ -112,3 +112,16 @@ html{
   background-color: none;
   opacity: 1;
 }
+
+.zoomin{
+  height:253px;
+  width: 302px;
+  position: absolute;
+  top: 9507px;
+  left: 40.5%;
+  z-index: 11;
+}
+
+.zoomin:hover{
+  background-image: url(../img/ZOOM.png);
+}
