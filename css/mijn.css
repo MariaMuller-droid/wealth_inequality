@@ -125,3 +125,19 @@ html{
 .zoomin:hover{
   background-image: url(../img/ZOOM.png);
 }
+
+.zoomedin{
+  zoom: 2500%;
+}
+
+.average{
+  z-index: 12;
+  position: absolute;
+  top: 9626.8px;
+  left: 898.5px;
+  height: 35.64px;
+  width: 63.36px;
+  opacity: 0.5;
+  background-image: url(../img/AVG_EU.png);
+  background-size: 100%;
+}

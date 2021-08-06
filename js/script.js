@@ -5,6 +5,7 @@ let mijnOprahKader= document.querySelector("div .oprah");
 let mijnMadonnaKader = document.querySelector(".madonna");
 let mijnDerdeButton = document.querySelector(".madonna .button");
 let mijnZoomIn = document.querySelector(".zoomin");
+let mijnPagina = document.querySelector("html");
 
 function eersteStap(){
     mijnEersteStap.classList.add("onzichtbaar")
@@ -27,3 +28,11 @@ function derdeStap(){
 }
 
 mijnDerdeButton.addEventListener("click", derdeStap);
+
+function vierdeStap(){
+    mijnZoomIn.classList.add("onzichtbaar");
+    mijnPagina.classList.add("zoomedin");
+    window.scrollTo(22500, 239200);
+}
+
+mijnZoomIn.addEventListener("click", vierdeStap);
