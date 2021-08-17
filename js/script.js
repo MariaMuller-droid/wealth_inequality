@@ -8,7 +8,8 @@ let mijnZoomIn = document.querySelector(".zoomin");
 let mijnPagina = document.querySelector("html");
 let averageOne = document.querySelector(".average");
 let zoomOutButton = document.querySelector(".average .button");
-let mijnAverageInfo = document.querySelector(".avgeu");
+let mijnAverageInfo = document.querySelectorAll(".avgeu");
+
 
 function eersteStap(){
     mijnEersteStap.classList.add("onzichtbaar")
@@ -32,19 +33,32 @@ function derdeStap(){
 
 mijnDerdeButton.addEventListener("click", derdeStap);
 
+
 function vierdeStap(){
+  let i = 0;
     mijnZoomIn.classList.add("onzichtbaar");
-    mijnPagina.classList.add("zoomedin");
+    mijnPagina.style.zoom = "2500%";
     averageOne.classList.remove("onzichtbaar");
     window.scrollTo(22500, 239200);
+
+    while(mijnAverageInfo.length> i){
+      mijnAverageInfo[i].classList.remove("onzichtbaar");
+      i++;
+    }
 }
 
 mijnZoomIn.addEventListener("click", vierdeStap);
 
+
 function zoomOut(){
-    mijnAverageInfo.classList.add("onzichtbaar");
-    mijnPagina.classList.add("zoomedout");
-    mijnPagina.classList.remove("zoomedin");
+  let ii = 0;
+    while(mijnAverageInfo.length> ii){
+      mijnAverageInfo[ii].classList.add("onzichtbaar");
+      ii++;
+    }
+    mijnZoomIn.classList.remove("onzichtbaar");
+    mijnPagina.style.zoom = "78%";
+  //  mijnPagina.classList.remove("zoomedin");
     window.scrollTo(0, 7000);
 }
 

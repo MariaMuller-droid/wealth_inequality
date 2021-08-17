@@ -119,20 +119,13 @@ html{
   position: absolute;
   top: 9507px;
   left: 40.5%;
-  z-index: 11;
+  z-index: 13;
 }
 
 .zoomin:hover{
   background-image: url(../img/ZOOM.png);
 }
 
-.zoomedin{
-  zoom: 2500%;
-}
-
-.zoomedout{
-  zoom: 78%;
-}
 
 .average{
   z-index: 12;
@@ -160,8 +153,8 @@ html{
     font-size: 0.1rem;
     border: 0.15px solid gray;
     position: absolute;
-    left: 20px;
-    top: 25px;
+    left: 28px;
+    top: 26px;
 }
 
  .average .button:hover{
