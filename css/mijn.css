@@ -128,24 +128,44 @@ html{
 
 
 .average{
-  z-index: 12;
+  z-index: 11;
   position: absolute;
   top: 9626.8px;
   left: 898.5px;
   height: 35.64px;
   width: 63.36px;
-  opacity: 0.5;
+  opacity: 1;
   background-image: url(../img/AVG_EU.png);
   background-size: 100%;
 }
 
-.average p{
+.paraOne{
   font-size: 0.1rem;
   position: absolute;
   left: 6.5px;
   top: 6px;
   width: 50px;
   text-align: center;
+}
+
+.paraTwo{
+  font-size: 0.1rem;
+  position: absolute;
+  left: -8px;
+  top: 15px;
+  width: 50px;
+  text-align: center;
+  color: #0071bc;
+}
+
+.paraThree{
+  font-size: 0.1rem;
+  position: absolute;
+  left: 21px;
+  top: 21px;
+  width: 50px;
+  text-align: center;
+  color: #c1272d;
 }
 
  .average .button{
@@ -159,4 +179,40 @@ html{
 
  .average .button:hover{
   border: 0.15px solid orange;
+}
+
+#medianEuHover{
+  position: absolute;
+  width: 5.313px;
+  height: 6px;
+  position: absolute;
+  left: 29.035px;
+  top: 15.52px;
+
+}
+
+#medianAfHover{
+ position: absolute;
+ width: 1.089px;
+ height: 1.056px;
+ position: absolute;
+ left: 34.35px;
+ top: 20.46px;
+
+}
+
+.hoverAverage{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 35.64px;
+  width: 63.36px;
+  opacity: 0;
+  background-image:url(../img/hover_1.png);
+  background-size: 100%;
+  transition: 0.6s;
+}
+
+.muisOver{
+  opacity: 1;
 }

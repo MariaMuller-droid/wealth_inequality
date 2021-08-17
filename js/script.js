@@ -9,6 +9,10 @@ let mijnPagina = document.querySelector("html");
 let averageOne = document.querySelector(".average");
 let zoomOutButton = document.querySelector(".average .button");
 let mijnAverageInfo = document.querySelectorAll(".avgeu");
+let hoverFieldOne = document.getElementById('medianEuHover');
+let hoverFieldTwo = document.getElementById("medianAfHover");
+let mijnHoverImg = document.querySelector(".hoverAverage");
+
 
 
 function eersteStap(){
@@ -48,6 +52,39 @@ function vierdeStap(){
 }
 
 mijnZoomIn.addEventListener("click", vierdeStap);
+
+function blueHover(){
+  mijnHoverImg.classList.toggle("muisOver");
+}
+
+hoverFieldOne.addEventListener("mouseover", blueHover);
+hoverFieldOne.addEventListener("mouseout", blueHover);
+
+function vijfdeStap(){
+ console.log("lolol");
+ hoverFieldTwo.classList.remove("onzichtbaar");
+ hoverFieldOne.classList.add("onzichtbaar");
+ mijnHoverImg.style.backgroundImage = "url('../wealth_inequality/img/hover_2.png')";
+ averageOne.style.backgroundImage = "url('../wealth_inequality/img/MED_EU.png')";
+}
+
+hoverFieldOne.addEventListener("click", vijfdeStap);
+
+function redHover(){
+  mijnHoverImg.classList.toggle("muisOver");
+}
+
+hoverFieldTwo.addEventListener("mouseover", redHover);
+hoverFieldTwo.addEventListener("mouseout", redHover);
+
+function zesdeStap(){
+ console.log("lolol");
+ hoverFieldTwo.classList.add("onzichtbaar");
+ mijnHoverImg.classList.add("onzichtbaar");
+ averageOne.style.backgroundImage = "url('../wealth_inequality/img/MED_AF.png')";
+}
+
+hoverFieldTwo.addEventListener("click", zesdeStap);
 
 
 function zoomOut(){
