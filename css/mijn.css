@@ -156,6 +156,8 @@ html{
   width: 50px;
   text-align: center;
   color: #0071bc;
+  opacity: 0;
+  transition: 0.6s;
 }
 
 .paraThree{
@@ -166,6 +168,8 @@ html{
   width: 50px;
   text-align: center;
   color: #c1272d;
+  opacity: 0;
+  transition: 0.6s;
 }
 
  .average .button{
@@ -201,7 +205,7 @@ html{
 
 }
 
-.hoverAverage{
+.hoverAverageOne{
   position: absolute;
   top: 0;
   left: 0px;
@@ -209,6 +213,18 @@ html{
   width: 63.36px;
   opacity: 0;
   background-image:url(../img/hover_1.png);
+  background-size: 100%;
+  transition: 0.6s;
+}
+
+.hoverAverageTwo{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 35.64px;
+  width: 63.36px;
+  opacity: 0;
+  background-image:url(../img/hover_2.png);
   background-size: 100%;
   transition: 0.6s;
 }

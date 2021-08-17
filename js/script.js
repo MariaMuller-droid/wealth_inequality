@@ -11,7 +11,10 @@ let zoomOutButton = document.querySelector(".average .button");
 let mijnAverageInfo = document.querySelectorAll(".avgeu");
 let hoverFieldOne = document.getElementById('medianEuHover');
 let hoverFieldTwo = document.getElementById("medianAfHover");
-let mijnHoverImg = document.querySelector(".hoverAverage");
+let mijnHoverImgOne = document.querySelector(".hoverAverageOne");
+let mijnHoverImgTwo = document.querySelector(".hoverAverageTwo");
+let paraTwo = document.querySelector(".paraTwo");
+let paraThree = document.querySelector(".paraThree");
 
 
 
@@ -49,38 +52,40 @@ function vierdeStap(){
       mijnAverageInfo[i].classList.remove("onzichtbaar");
       i++;
     }
+
 }
 
 mijnZoomIn.addEventListener("click", vierdeStap);
 
 function blueHover(){
-  mijnHoverImg.classList.toggle("muisOver");
+  mijnHoverImgOne.classList.toggle("muisOver");
+  paraTwo.classList.toggle("muisOver");
 }
 
 hoverFieldOne.addEventListener("mouseover", blueHover);
 hoverFieldOne.addEventListener("mouseout", blueHover);
 
 function vijfdeStap(){
- console.log("lolol");
  hoverFieldTwo.classList.remove("onzichtbaar");
- hoverFieldOne.classList.add("onzichtbaar");
- mijnHoverImg.style.backgroundImage = "url('../wealth_inequality/img/hover_2.png')";
+ //hoverFieldOne.classList.add("onzichtbaar");
+ paraTwo.style.opacity = "1";
  averageOne.style.backgroundImage = "url('../wealth_inequality/img/MED_EU.png')";
 }
 
 hoverFieldOne.addEventListener("click", vijfdeStap);
 
 function redHover(){
-  mijnHoverImg.classList.toggle("muisOver");
+  mijnHoverImgTwo.classList.toggle("muisOver");
+  paraThree.classList.toggle("muisOver");
 }
 
 hoverFieldTwo.addEventListener("mouseover", redHover);
 hoverFieldTwo.addEventListener("mouseout", redHover);
 
 function zesdeStap(){
- console.log("lolol");
- hoverFieldTwo.classList.add("onzichtbaar");
- mijnHoverImg.classList.add("onzichtbaar");
+ //hoverFieldTwo.classList.add("onzichtbaar");
+ paraThree.style.opacity = "1";
+ //mijnHoverImg.classList.add("onzichtbaar");
  averageOne.style.backgroundImage = "url('../wealth_inequality/img/MED_AF.png')";
 }
 
