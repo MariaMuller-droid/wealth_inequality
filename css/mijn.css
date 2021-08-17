@@ -130,6 +130,10 @@ html{
   zoom: 2500%;
 }
 
+.zoomedout{
+  zoom: 78%;
+}
+
 .average{
   z-index: 12;
   position: absolute;
@@ -140,4 +144,26 @@ html{
   opacity: 0.5;
   background-image: url(../img/AVG_EU.png);
   background-size: 100%;
+}
+
+.average p{
+  font-size: 0.1rem;
+  position: absolute;
+  left: 6.5px;
+  top: 6px;
+  width: 50px;
+  text-align: center;
+}
+
+ .average .button{
+    padding: 0.05rem 0.1rem;
+    font-size: 0.1rem;
+    border: 0.15px solid gray;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+ .average .button:hover{
+  border: 0.15px solid orange;
 }

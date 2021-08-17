@@ -6,6 +6,9 @@ let mijnMadonnaKader = document.querySelector(".madonna");
 let mijnDerdeButton = document.querySelector(".madonna .button");
 let mijnZoomIn = document.querySelector(".zoomin");
 let mijnPagina = document.querySelector("html");
+let averageOne = document.querySelector(".average");
+let zoomOutButton = document.querySelector(".average .button");
+let mijnAverageInfo = document.querySelector(".avgeu");
 
 function eersteStap(){
     mijnEersteStap.classList.add("onzichtbaar")
@@ -32,7 +35,17 @@ mijnDerdeButton.addEventListener("click", derdeStap);
 function vierdeStap(){
     mijnZoomIn.classList.add("onzichtbaar");
     mijnPagina.classList.add("zoomedin");
+    averageOne.classList.remove("onzichtbaar");
     window.scrollTo(22500, 239200);
 }
 
 mijnZoomIn.addEventListener("click", vierdeStap);
+
+function zoomOut(){
+    mijnAverageInfo.classList.add("onzichtbaar");
+    mijnPagina.classList.add("zoomedout");
+    mijnPagina.classList.remove("zoomedin");
+    window.scrollTo(0, 7000);
+}
+
+zoomOutButton.addEventListener("click", zoomOut);
